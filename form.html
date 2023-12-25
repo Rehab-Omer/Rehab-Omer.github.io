@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html> 
+<head> 
+ <title> Registration page </title>
+<style>
+ body { 
+       
+        text-align: center;
+        padding-top:5px;
+        padding-bottom:5px;
+        background-color: rgb(255, 109, 55);
+ 
+      } 
+  div {  
+        border: outset 1px rgb(209, 201, 201);
+        border-width: 5px;
+        border-radius:20% 5% 20% 5%;
+        width:50%; ;
+        margin:auto;
+        background-image:url("wp2483004.jpg") ;
+        background-repeat:no-repeat;
+        padding:5px;
+        font-size: 20px;
+        color: #909090;                     
+      }
+</style>
+</head>
+ <body>
+  <div>
+   <b>
+   <h3> step 1 of 2- Basic Information </h3>
+   <h3> LET'S GET STARTED! </h3>
+   <p> you're about to make the best decision of your life.<br>
+     Take control of your health and get the body you've <br> always dreamed of! </p>
+   <hr width=30% >
+     <form action="c:\xampp\htdocs\personal trainer\indx.php" method="post"> 
+       <label for="text1"> FULL NAME* </label>
+       <br>
+       <input id="text1" type="text" name="fname" size="40"  required>
+       <br>
+       <br>
+       <label for="text2" > EMAIL* </label>
+       <br>
+       <input id="text2" type="email" name="email" size="40" placeholder="@gmail.com" required>
+       <br>
+       <hr width=50% >
+
+       <h3> step 2 of 2- PURCHASE DETAILS </h3>
+       <h3> PROGRAM DETAILS </h3>
+       <p> I'll need a lot of details regading your goals and body <br> type
+         to create and perfect the program,to only to <br> customize it to what
+         you need,but so i can also adapt <br> your current life style to it! </p>
+       <hr width=30% >
+
+       <b> Gender* </b>
+       <br>
+       <label for="text3"> Male </label>
+       <input id="text3" type="radio" name="gender" value="Male" required>
+       <br>
+       <label for="text4"> Female </label>
+       <input id="text4" type="radio" name="gender" value="Female" required>
+       <br>
+       <br>
+       <label for="text5"> Age* </label>
+       <br>
+       <input id="text5" type="text" name="age" required>
+       <br>
+       <br>
+       <label for="text6"> Height* </label>
+       <br>
+       <input id="text6" type="text" name="height" required>
+       <br>
+       <br>
+       <label for="text7"> Weight* </label>
+       <br>
+       <input id="text7" type="text" name="weight" required>
+       <br>
+       <br>
+       <select name="Target" required>
+       <option value="0" selected disabled> Choose Target </option>
+       <option value="1"> Loss weight </option>
+       <option value="2"> Gain Muscles </option>
+       <option value="3"> General Fitness </option>
+       </select>
+       <br>
+       <br>
+              <button type="submit" name="btest"> sign in </button>
+       </b>
+     </form>  
+  </div>    
+ </body>
+</html>
